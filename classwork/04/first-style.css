@@ -1,0 +1,42 @@
+h1 {
+		color: purple;
+		margin: 0;
+	}
+h2 {
+	margin: 0;
+	text-align: center;
+	border: dashed 2px chocolate;
+	float: center;
+	width:300px;
+	height: 30px;
+}
+p {
+		font-family: "Helvetica";
+		background-color: lightblue;
+		float:left;
+		width:300px;
+		height: 30px;
+
+	}
+
+body {
+		background-color: #eda;
+		color: orange;
+	}
+
+.email {
+		color: chocolate;
+		font-family: "Old School Text book"
+
+}
+
+.header-title {
+	font-size:100px;
+}
+
+.puppy{
+	position: relative;
+	left:50%;
+	width:100px;
+	margin-left: -60px;
+}
