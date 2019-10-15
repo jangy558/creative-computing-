@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		html, body{
+			height: 100%;
+		}
+		body{
+			margin:0;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+	.pink {
+			width: 50vmin;
+			height: 50vmin;
+			background-color: #c89;
+
+			animation: slide 1s infinite alternate;
+		}
+	.wrapper {
+		background-color: #eb65;
+		animation: spin 10s infinite linear;
+	}
+
+@keyframes spin {
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes slide {
+	to{
+		transform:translate(400px, 0px);
+	}
+}
+
+	</style>
+</head>
+<body>
+
+<div class="wrapper">
+<div class="pink"></div>
+</div>
+
+</body>
+</html>

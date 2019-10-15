@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		html, body{
+			height: 100%;
+		}
+		body{
+			margin:0;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		div {
+			width: 50vmin;
+			height: 50vmin;
+			background-color: #c93;
+
+			/*long*/
+			/*animation-name: spin;*/
+			/*animation-duration: 2s;*/
+
+			/*short*/
+			animation: spin 5s infinite linear;
+		}
+
+@keyframes spin {
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+	</style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>

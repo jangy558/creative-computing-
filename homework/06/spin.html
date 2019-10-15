@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		html, body{
+			height: 100%;
+		}
+		body{ 
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: black;
+
+
+		}
+		.back1{
+			width:3000px;
+			height:120px;
+			background-color: #8b9da5;
+			animation: slide4 6s infinite alternate;
+
+		}
+
+		.big{
+			width: 1000vmin;
+			height: 100vmin;
+			background-color: #9ec4dc;
+			animation: spin 8s infinite linear;
+		}
+
+		.red {
+
+				width: 50vmin;
+				height: 20vmin;
+				background-color: #c31;
+				animation: slide 1s infinite alternate;
+		}
+		.pink {
+				width: 500vmin;
+				height: 30vmin;
+				background-color: #c89;
+				animation: slide 0.8s infinite alternate;
+		}
+		.thrid{
+				width: 400vmin;
+				height: 30vmin;
+				background-color: #eb96;
+				animation: slide 1.7s infinite alternate;
+		}
+		.fourth{
+				width: 200vmin;
+				height: 80vmin;
+				background-color: #eb1;
+				animation: spin 5s infinite alternate;
+		
+		}
+		.fifth{
+
+			width: 60vmin ;
+			height:20vmin;
+			background-color: #c12;
+			animation: slide1 1s
+			infinite alternate;
+		}
+		.six{
+			width: 50vmin;
+			height:25vmin;
+			background-color: #eb78;
+			animation: slide1 3s infinite alternate;
+		}
+		.seven{
+			width: 75vmin;
+			height: 20vmin;
+			background-color: #a57;
+			animation: slide2 5s
+			infinite alternate;
+		}
+		.eight{
+			width: 800vmin;
+			height: 15vmin;
+			background-color: #c12;
+			animation: slide2 2s
+			infinite alternate;
+		}
+		.nine{
+			width: 300vmin;
+			height:200vmin;
+			background-color: mistyrose;
+			animation: slide3 2s
+			infinite alternate;
+		}
+
+
+@keyframes slide {
+	to{
+		transform:translate(300px, -100px);
+	}
+}
+@keyframes slide1 {
+	to{
+		transform:translate(-500px, -200px);
+	}
+}
+@keyframes slide2 {
+	to{
+		transform:translate(-700px, 300px);
+	}
+}
+
+@keyframes slide3 {
+	from{background-color: mistyrose;}
+	to{background-color:#feb521 ;
+		transform:translate(-900px, 150px);
+	}
+}
+@keyframes slide4 {
+	to{
+		transform:translate(0px, 300px);
+	}
+
+}
+@keyframes spin {
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+	</style>
+
+</head>
+<body>
+<div class=big></div>
+<div class=red></div>
+<div class=pink></div>
+<div class=thrid></div>
+<div class=fourth></div>
+<div class=fifth></div>
+<div class=six></div>
+<div class=seven></div>
+<div class=eight></div>
+<div class=nine></div>
+<div class=back1></div>
+
+
+</body>
+</html>
