@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		html, body {
+			margin: 0;
+			height: 100%;
+		}
+		body { display: flex; }
+		div { flex: 1; }
+
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	var array = [];
+
+
+
+	var colors = [	
+		"hsl(270, 60%, 70%,)",
+		"hsl(270, 60%, 50%, .15)",
+		"hsl(270, 60%, 50%, .7)",
+		"hsl(270, 60%, 20%, .2)",
+		"hsl(270, 60%, 40% )"
+
+	];
+
+	console.log(colors);
+
+var num = Math.random() * 5;
+var whole = Math.floor(num);
+
+var randomColor = colors[whole];
+
+
+document.body.style.backgroundColor = randomColor;
+
+
+</script>
+
+</body>
+</html>

@@ -17,19 +17,36 @@
 <body>
 
 
-<img src="1.svg" id="die1"/> 
+<img src="1.svg" id="die1"> 
 
-<img src="5.svg" id="die2"/> 
+<img src="5.svg" id="die2"> 
 
 
 	<script>
+var num = Math.random();
 
-var die1 = document.getElementById("die1");
-var die2 = document.getElementById("die2");
+var num = Math.random();
+var whole = Math.floor(num * 6)+1;
+console.log(num);
+
+var die1 = document.getElementById("die1").src = whole + ".svg";
+var num2 = Math.random();
+var whole2 = Math.floor(num * 6)+1;
+
+var die2 = document.getElementById("die2").src = whole2 + ".svg";
 
 
-var dice = Math.floor(Math.random() * 6) +1 ;
-var dice2 = Math.floor(Math.random() * 6) +1 ;
+//if (whole == 1) document.getElementById("die1").src = "1.svg";
+//if (whole == 2) document.getElementById("die1").src = "2.svg";
+//if (whole == 3) document.getElementById("die1").src = "3.svg";
+//if (whole == 4) document.getElementById("die1").src = "4.svg";
+//if (whole == 5) document.getElementById("die1").src = "5.svg";
+//if (whole == 6) document.getElementById("die1").src = "6.svg";
+
+//var die2 = document.getElementById("die2").;
+
+//var dice = Math.floor(Math.random() * 6) +1 ;
+//var dice2 = Math.floor(Math.random() * 6) +1 ;
 
 
 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id= my-name> YooJin Jang </h1>
+
+	<script type="text/javascript">
+		
+//waht are the 3 things a computer can do? 
+// 1. store/retrieve information (memory)
+// 2. arithmetic 
+// 3. control flow 
+
+// 1. memory
+var anumber = 3.14;
+var astring = "hello";
+var aboolean = true;
+// these are the javascript primitives 
+
+var anotherbollean = 5 < 3;
+var anotherstring = "5" + 5;
+var anothernumber = 5 +5;
+// the plus sign, same symbol different operations 
+
+// we only ever use "var" once for each variable. when it's created 
+
+
+
+// 2. arithmetic 
+// remember order of operations 
+
+// 3. control flow 
+if (true) console.log("hi"); 
+// -> 차라리 이렇게 써라 : console.log("hi")
+if (false) console.lof("goodbye"); //this line of code will never going to run
+// what makes if statments interesting is when you include variables in them 
+if (anothernumber < 9) console.log("yes");
+// multi-line if statements
+if (true) {
+	console.log("this is true");
+	anothernumber = 15;
+}
+// inside parenthesis is only ever a boolean
+
+// EVERYTHING ABOVE THIS LINE IS THE CORE OF THE JAVASCRIPT LANGUAGE (except conole.log)
+
+
+// these are more fundamental to the language. 
+console.log("this is an add-on method");
+
+console.log(Math);
+console.log(Math.random());
+
+// these are a part of DOM Level 1 specification 
+//https://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/
+console.log(document);
+console.log(document.getElementById);
+
+var header = document.getElementById("my-name");
+console.log(header);
+
+console.log(header.id);
+// the dot goes inside of a thing
+console.log(header.style);
+// setting a style property
+header.style.color = "#ffffff";
+document.body.style.backgroundColor = "#c64";
+
+
+	</script>
+
+</body>
+</html>
