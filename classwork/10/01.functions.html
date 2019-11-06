@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// #1. functions can store code 
+		// to be run anytime in the future 
+		
+
+	function printTime() {
+		//whatever i type here is insdie the function 
+		var d = new Date();
+		var time = d.toLocaleTimeString();
+		console.log(time);
+
+	}
+
+		printTime();
+		//여기까지 해야지 console에 hello가 뜬다 
+
+		document.onmousemove = printTime;
+
+		var number = Math.random();
+
+
+
+
+	</script>
+
+</body>
+</html>

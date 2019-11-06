@@ -12,30 +12,44 @@
 
 	</style>
 </head>
+<div>
 <body>
 <script type="text/javascript">
-	var array = [];
+
+	var counter = 0;
 
 
+	while(counter < 22) {
+		counter = counter + 1;
+		var d = document.createElement("div");
 
-	var colors = [	
-		"hsl(270, 60%, 70%,)",
-		"hsl(270, 60%, 50%, .15)",
-		"hsl(270, 60%, 50%, .7)",
-		"hsl(270, 60%, 20%, .2)",
-		"hsl(270, 60%, 40% )"
-
-	];
-
-	console.log(colors);
-
-var num = Math.random() * 5;
-var whole = Math.floor(num);
-
-var randomColor = colors[whole];
+		var rand = Math.random () * 360;
+		var color = "hsl(" + rand + ", 60%, 70%)";
+		
+		
+		d.style.backgroundColor = color;
+		document.body.appendChild(d);
+		}
 
 
-document.body.style.backgroundColor = randomColor;
+//var colors = [	
+		//"hsl(270, 60%, 70%,)",
+		//"hsl(270, 60%, 50%, .15)",
+		//"hsl(270, 60%, 50%, .7)",
+		//"hsl(270, 60%, 20%, .2)",
+		//"hsl(270, 60%, 40% )"
+
+	//];
+
+	//console.log(colors);
+
+//var num = Math.random() * 5;
+//var whole = Math.floor(num);
+
+//var randomColor = colors[whole];
+
+
+//document.body.style.backgroundColor = randomColor;
 
 
 </script>

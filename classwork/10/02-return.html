@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+
+function randomColor() {
+
+	var hue = Math.random() * 360;
+	var color = "hsl(" + hue + ", 100%, 50%)";
+	// just like how Math.random() turns into a number 
+	return color; //"turns into"
+}
+
+var num = 0.235289275982;
+document.body.style.backgroundColor = randomColor();
+
+//var c = randomColor();
+//console.log(c);
+
+//	document.body.style.backgroundColor = c;
+</script>
+</body>
+</html>
