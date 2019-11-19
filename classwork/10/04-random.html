@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+
+	// #3. "parameters" / "arguments" are ways of customizing a function. treat them like variables inside the function.
+
+function random (low, high) {
+	var num = Math.floor( Math.random() * (high-low) + low);
+	return num; 
+}
+
+
+
+ var color = "hsl("+ random(270, 350) + ","+ random(50,80) + "%, "+ random(60,80) +"%)";
+
+ document.body.style.backgroundColor=color;
+
+//var num = Math.floor( Math.random() * 100 + 100);
+//to get number from 100 to 200/ the range is to get 100 colors possible. if you want colors from 90 to 100, then it will be..
+//var num = Math.floor( Math.random() * 10 + 90);
+
+
+</script>
+</body>
+</html>
