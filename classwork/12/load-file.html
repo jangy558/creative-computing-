@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<input type="file" id="file">
+
+<script type="text/javascript">
+
+functions randomElement(array) {
+}
+	
+var reader = new FileReader();
+
+document.getElementById("file").onchange = function(event) {
+	reader.readAsText(this.files[0]);
+};
+
+reader.onload = function(event) {
+	var text = event.target.result;
+	console.log(text);
+}
+
+</script>
+
+</body>
+</html>

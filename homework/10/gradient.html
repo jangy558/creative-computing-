@@ -10,8 +10,8 @@
 
 
 var hue = 0;
-var sat = 100;
-var light = 50;
+var sat = 50;
+var light = 80;
 
 
 
@@ -19,13 +19,13 @@ setInterval(	function (){
 	
 	body.style.backgroundColor = `hsl(${hue}, ${sat}%, ${light}%)`;
 	hue += 1;
-	if(hue > 120) hue = 0;
+	if(hue > 360) hue = 0;
 
-}, 50);
+}, 30);
 
 
 
-		
+
 	</script>
 
 </body>

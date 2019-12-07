@@ -6,6 +6,8 @@
 <body>
 <script type="text/javascript">
 
+	// #2. functions can turn into values, to be usd after they've finished running
+
 function randomColor() {
 
 	var hue = Math.random() * 360;
@@ -14,7 +16,7 @@ function randomColor() {
 	return color; //"turns into"
 }
 
-var num = 0.235289275982;
+var num = Math.random;
 document.body.style.backgroundColor = randomColor();
 
 //var c = randomColor();

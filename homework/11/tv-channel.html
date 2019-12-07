@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giphy</title>
+</head>
+<style>
+	html {
+		padding: 0;
+		margin: 0;
+	}
+	img { 
+position: fixed;
+top:0;
+left:0;
+min-height: 100%
+min-width: 1024px;
+width: 100%;
+	 }
+
+	 #number {
+	 	font-family: less;
+	 	font-size: 40px;
+	 	position: absolute;
+	 	right:2%;
+	 	bottom:2%;
+	 	color:white;
+	 	font-weight: bold;
+	 }
+
+</style>
+<body>
+	
+		<img src="giphy.webp" id="gifs">
+		<div id="number">1</div>
+
+<script>
+		var image = [
+		"giphy.webp",
+		"giphy2.webp",
+		"giphy3.webp", 
+		"giphy4.webp",
+		"giphy5.webp",
+		];
+	
+var gifs = 0;
+
+document.onkeydown = function(event) { 
+	
+	if (event.key == "ArrowUp") {
+		
+		gifs=gifs+1;
+		if (gifs==6){
+			gifs=0;
+
+
+		}
+
+	}
+	if (event.key == "ArrowDown") {
+		gifs=gifs-1;
+		if (gifs==-1){
+			gifs=4;
+		}
+	}
+	
+	document.getElementById("gifs").src= image[gifs];
+	}
+
+</script>
+
+</body>
+</html>

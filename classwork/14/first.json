@@ -1,0 +1,14 @@
+{
+	"key":"value",
+	"name":"yoojin",
+	"color":"#f16892",
+	"lat": 40,
+	"lon":-74,
+	"location": {
+		"lat": 40,
+		"lon":-74
+	},
+	"water": true
+}
+
+

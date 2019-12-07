@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+var image = "https://robbykraft.github.io/CreativeComputing/earth-map.svg";
+
+fetch(image).then(function(data){ return data.text(); })
+ .then(function(svg) { 
+ 	document.body.insertAdjacentHTML("beforeend", svg)
+ 	console.log(svg);
+
+ })
+
+
+
+</script>
+</body>
+</html>
